@@ -8,6 +8,7 @@
 
 html,body{
     height: 100%;
+    /* perspective: 800px; */
     width: 100%;
 }
 
@@ -107,7 +108,7 @@ video{
 }
 
 #page2{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     z-index: 10;
 }
@@ -194,4 +195,135 @@ video{
 #about-us-in p{
     font-size: 20px;
     line-height: 26px;
+}
+
+#card-holder{
+    height: 60vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+    z-index: 10;
+}
+
+.card{
+    height: 80%;
+    width: 22%;
+    border-radius: 20px;
+    /* background-color: blue; */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: all ease-in-out 0.6s;
+}
+
+#card1{
+    background-image: url(./card1.avif);
+}
+
+#card2{
+    background-image: url(./card2.webp);
+}
+
+#card3{
+    background-image: url(./card3.avif);
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #95C11E;
+    padding: 20px;
+    padding-top: 100px;
+    opacity: 0;
+    transition: all ease-in-out 0.6s;
+    position: relative;
+}
+
+.overlay h4{
+    font-size: 20px;
+    font-weight: 900;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
+
+.overlay p{
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+}
+
+.card:hover .overlay{
+    opacity: 1;
+}
+
+.card:hover{
+    transform: rotate3d(1,-1,0,20deg);
+}
+
+#green-div{
+    height: 30vh;
+    width: 100%;
+    background: linear-gradient(to left bottom,#18A138,#ACE022);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+#green-div img{
+    height: 100%;
+    object-fit: cover;
+    width: 14%;
+}
+
+#green-div h4{
+    width: 45%;
+    line-height: 50px;
+    text-align: center;
+    font-size: 27px;
+    font-weight: 800;
+    color: #000;
+    text-transform: uppercase;
+}
+
+#page3{
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page3 img{
+    height: 60px;
+    position: absolute;
+}
+
+#page3>p{
+    width: 60%;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 45px;
+    position: relative;
+    z-index: 10;
+}
+
+#page3 #colon1{
+    top: 20%;
+    left: 12%;
+}
+
+#page3 #colon2{
+    bottom: 20%;
+    right: 12%;
 }
