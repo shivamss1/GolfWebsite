@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
 </head>
 
 <body>
     <div id="nav">
-        <img src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/logo-white.svg" alt="" srcset="">
+        <img src="./images/logo-white.svg" alt="" srcset="">
         <h4>TOPTRACER RANGE</h4>
         <h4>GOLF LESSONS</h4>
         <h4>ADVENTURE GOLF</h4>
@@ -19,13 +23,16 @@
     </div>
     <div id="cursor"></div>
     <div id="cursor-blur"></div>
-    <video src="./hero.mp4" autoplay loop muted></video>
+    <video src="./images/hero.mp4" autoplay loop muted></video>
     <div id="main">
         <div id="page1">
             <h1>EAT. DRINK. PLAY.</h1>
             <h2>WELCOME TO SIDCUP FAMILY GOLF!</h2>
             <p>Sidcup Family Golf is a Toptracer driving range and crazy golf venue in Sidcup, South East London.
                 Passionate about technology, player development and making golf fun and accessible to everyone.</p>
+            <div id="arrow" onclick="">
+                <i class="ri-arrow-down-line"></i>
+            </div>
         </div>
         <div id="page2">
             <div id="scroller">
@@ -45,7 +52,7 @@
                 </div>
             </div>
             <div id="about-us">
-                <img src="./page2-left.avif" alt="leftimage" srcset="">
+                <img src="./images/page2-left.avif" alt="leftimage" srcset="">
                 <div id="about-us-in">
                     <h3>ABOUT US</h3>
                     <p>Home to a 46-bay, multi-tier, floodlit driving range, powered by Toptracer Range technology.
@@ -53,7 +60,7 @@
                         something for everyone as we also boast two outdoor 18-hole dinosaur themed crazy golf courses.
                     </p>
                 </div>
-                <img src="./page2-right.avif" alt="rightimage" srcset="">
+                <img src="./images/page2-right.avif" alt="rightimage" srcset="">
             </div>
             <div id="card-holder">
                 <div class="card" id="card1">
@@ -89,8 +96,57 @@
             <p>I absolutely love the adventure golf here. It seems every time I come they've added a new feature. My mum
                 and I usually come together and it's such a laugh. The designs for the holes are creative and the two
                 different courses makes it more fun as you can complete both and compare your scores!</p>
-            <img src="./quote-left.svg" alt="" srcset="" id="colon1">
-            <img src="./quote-right.svg" alt="" srcset="" id="colon2">
+            <img src="./images/quote-left.svg" alt="" srcset="" id="colon1">
+            <img src="./images/quote-right.svg" alt="" srcset="" id="colon2">
+        </div>
+        <div id="page4">
+            <h1>WHAT ARE YOU WAITING FOR?</h1>
+            <div class="elem">
+                <h2>TOPTRACER RANGE</h2>
+                <img src="./images/page-toptracer.jpg" alt="" srcset="">
+            </div>
+            <div class="elem">
+                <h2>GOLF LESSONS</h2>
+                <img src="./images/page-lessons.jpg" alt="" srcset="">
+            </div>
+            <div class="elem">
+                <h2>ADVENTURE GOLF</h2>
+                <img src="./images/page-ag.avif" alt="" srcset="">
+            </div>
+        </div>
+        <div id="footer">
+            <img src="./images/dots-footer.svg" alt="footer-dots" srcset="">
+            <div id="box1">
+                    <img src="./images/logo-white.svg" alt="" srcset="">
+                <div id="list1" class="text">
+                    <h2>TOPTRACER</h2>
+                    <h2>CRAZY GOLF</h2>
+                    <h2>CAFE</h2>
+                </div>
+                <div id="list2" class="text">
+                    <h2>EVENTS</h2>
+                    <h2>GOLF LESSONS</h2>
+                    <h2>CONTACT US</h2>
+                </div>
+                <div id="address" >
+                    <h5>A20, SIDCUP BYPASS</h5>
+                    <h5>CHISLEHURST</h5>
+                    <h5>KENT</h5>
+                    <h5>BR7 6RP</h5>
+                    <h5>TEL: 0208 309 0181</h5>
+                    <h2>GET DIRECTIONS</h2>
+                </div>
+            </div>
+            <div id="box2">
+                <h5>Copyright © 2023 Adventure Leisure Ltd. All rights reserved.</h5>
+                <h5>|</h5>
+                <h5 class="imp">Privacy Policy</h5>
+                <h5>|</h5>
+                <h5 class="imp">Terms And Conditions</h5>
+                <h5>|</h5>
+                <h5 class="imp">Gender Pay Gap</h5>
+                <h5 class="imp">Made by Shivam</h5>
+            </div>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
